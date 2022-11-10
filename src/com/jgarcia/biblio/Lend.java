@@ -2,10 +2,19 @@ package com.jgarcia.biblio;
 
 public class Lend {
 
+    private Integer id;
     private Integer bookisbn;
     private String userData;
     private String lendDate;
     private String returnDate;
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getId() {
+        return id;
+    }
 
     public void setBookisbn(Integer bookisbn) {
         this.bookisbn = bookisbn;
@@ -23,7 +32,7 @@ public class Lend {
         return userData;
     }
 
-    public void setLendDate(String lendDate) {
+    public void setLendDate() {
         this.lendDate = lendDate;
     }
 
